@@ -62,26 +62,42 @@
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
                             <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <div class="form-floating">
-                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                    <label for="name">Name</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <div class="form-row">
+                                    <div class="col d-flex mb-4">
+                                        <label for="name">Name</label>
+                                        <input class="form-control  form-control-sm ms-sm-5" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                    </div>
                                 </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email" />
-                                    <label for="email">Email address</label>
+                                <div class="col d-flex mb-4">
+                                    <label for="email">Email</label>
+                                    <input class="form-control form-control-sm  ms-sm-5" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email" />
                                     <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                     <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                                 </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Enter your phone number..." data-sb-validations="required" />
-                                    <label for="phone">Phone Number</label>
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <div class="row mb-4">
+                                    <legend class="col-form-label col-sm-2 pt-0">Sex</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                 Man
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input " type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            <label class="form-check-label" for="gridRadios2">
+                                                Woman
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-floating">
-                                    <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
-                                    <label for="message">Message</label>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <div class="form-row">
+                                    <div class="col d-flex">
+                                        <label for="validationTextarea">Text</label>
+                                        <textarea class="col form-control  ms-sm-5" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
                                 </div>
                                 <br />
                                 <!-- Submit success message-->
