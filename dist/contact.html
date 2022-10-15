@@ -62,16 +62,18 @@
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
                             <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <div class="form-row">
-                                    <div class="col d-flex mb-4">
-                                        <label for="name">Name</label>
-                                        <input class="form-control  form-control-sm ms-sm-5" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <div class="form-row row mb-4">
+                                    <label class="col-2" for="name">Name</label>
+                                    <div class="col-10">
+                                        <input class="form-control  form-control-sm" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                     </div>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                                 </div>
-                                <div class="col d-flex mb-4">
-                                    <label for="email">Email</label>
-                                    <input class="form-control form-control-sm  ms-sm-5" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email" />
+                                <div class="form-row row mb-4">
+                                    <label class="col-2" for="email">Email</label>
+                                    <div class="col-10">
+                                        <input class="form-control form-control-sm" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email" />
+                                    </div>
                                     <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                     <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                                 </div>
@@ -92,10 +94,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="col d-flex">
-                                        <label for="validationTextarea">Text</label>
-                                        <textarea class="col form-control  ms-sm-5" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                                <div class="form-row row">
+                                    <label class="col-2" for="validationTextarea">Text</label>
+                                    <div class="col-10">
+                                        <textarea class="col form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
                                         <div class="invalid-feedback"></div>
                                     </div>
                                 </div>
